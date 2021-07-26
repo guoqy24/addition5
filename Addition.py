@@ -3,7 +3,7 @@
 
 #num1 = input('输入第一个数字：')
 from StdSuites import data
-
+print('数字')
 num1=data.get_parameters_from_jenkins("num1")
 num2=data.get_parameters_from_jenkins("num2")
 
