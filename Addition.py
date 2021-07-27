@@ -1,9 +1,13 @@
 # -*- coding: UTF-8 -*-
 
-
+import os
 #num1 = input('输入第一个数字：')
-from StdSuites import data
-print('数字')
+
+class getData():
+    def get_parameters_from_jenkins(self,parameters_name):
+        return os.getenv(parameters_name)
+
+data=getData()
 num1=data.get_parameters_from_jenkins("num1")
 num2=data.get_parameters_from_jenkins("num2")
 
